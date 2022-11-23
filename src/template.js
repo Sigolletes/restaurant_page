@@ -10,9 +10,11 @@ function displayTemplate() {
 	const menuTag = document.createElement("div");
 	const contactTag = document.createElement("div");
 
-	homeTag.innerText = "HOME";
-	menuTag.innerText = "MENU";
-	contactTag.innerText = "CONTACT";
+	homeTag.innerHTML = "<a href='./home.js'>HOME</a>";
+	menuTag.innerHTML = "<a href='./menu.js'>MENU</a>";
+	contactTag.innerHTML = "<a href='./contact.js'>CONTACT</a>";
+
+	footer.innerText = "Coded by Sigolletes";
 
 	contentDiv.appendChild(header);
 	contentDiv.appendChild(main);
@@ -24,6 +26,8 @@ function displayTemplate() {
 }
 
 // export function that calls previous function
-export default function template() {
+function template() {
   displayTemplate();
 };
+
+export default template;

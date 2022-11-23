@@ -1,8 +1,8 @@
 // imports
-import home from './home.js';
-import menu from '.menu.js';
-import contact from '.contact.js';
-import template from '.template.js';
+import home from './home';
+import menu from './menu';
+import contact from './contact';
+import template from './template';
 
 // event listener page loaded tab home
 addEventListener("load", () => {

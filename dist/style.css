@@ -6,5 +6,60 @@
 }
 
 :root {
+	--color1: rgb(132, 106, 84);
+	--color2: rgb(79, 48, 66);
+	--color3: rgb(95, 119, 143);
+	--color4: rgb(148, 175, 203);
+	--color5: rgb(234, 234, 224);
+}
 
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#content {
+	width: 90vw;
+	max-width: 1200px;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 50px 1fr 30px;
+}
+
+header {
+	background-color: var(--color1);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+main {
+	background-color: var(--color3);
+	display: grid;
+	grid-template-rows: auto auto auto;
+	gap: 10px;
+	padding: 10px;
+}
+
+footer {
+	background-color: var(--color1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--color4);
+	border-radius: 20px;
+	padding: 5vmin;
 }
