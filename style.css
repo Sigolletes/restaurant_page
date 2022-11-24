@@ -39,7 +39,7 @@ header {
 	background-color: var(--color3);
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: flex-end;
 }
 
 main {
@@ -70,17 +70,21 @@ footer {
 	padding: 3vh 5vw 3vh 5vw;
 }
 
-a, a:visited {
-	font-size: clamp(20px, 3vw, 35px);
+button {
+	font-size: clamp(20px, 2.8vw, 25px);
 	color: var(--color5);
+	background-color: var(--color2);
+	border: none;
+	border-radius: 10px;
+	padding: 8px;
 }
 
-a:hover {
+button:hover {
 	color: var(--color4);
 }
 
 h1 {
-	font-size: clamp(30px, 5vw, 60px);
+	font-size: clamp(30px, 5vw, 40px);
 	color: var(--color2);
 }
 
