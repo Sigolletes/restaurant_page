@@ -7,15 +7,21 @@ function displayContact() {
 	const contactInfo = document.createElement("div");
 	const contactUbication = document.createElement("div");
 
+  main.appendChild(contactTitle);
+	main.appendChild(contactInfo);
+	main.appendChild(contactUbication);
+
 	contactTitle.classList.add("section");
 	contactInfo.classList.add("section");
 	contactUbication.classList.add("section");
 
-  contactTitle.innerHTML = "<h1>CONTACT US/h1>";
+  contactTitle.innerHTML = "<h1>CONTACT US</h1>";
 
   contactInfo.innerHTML = "<h3>CONTACT</h3>";
-  contactInfo.innerHTML = "<p>Phone: 555 123 123</p>";
-  contactInfo.innerHTML = "<p>Email: ecorestaurant@eco.tree</p>";
+  contactInfo.innerHTML += "<p>Phone: 555 123 123</p>";
+  contactInfo.innerHTML += "<p>Email: ecorestaurant@eco.tree</p>";
+
+  
 };
 
 // export function that calls previous function
