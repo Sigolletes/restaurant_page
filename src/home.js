@@ -3,6 +3,8 @@ function displayHome() {
 	const main = document.querySelector("main");
 	main.innerHTML = "";
 
+	
+
 	const titleDiv = document.createElement("div");
 	const infoDiv = document.createElement("div");
 	const scheduleDiv = document.createElement("div");
