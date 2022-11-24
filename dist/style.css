@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,11 +8,13 @@
 }
 
 :root {
-	--color1: rgb(132, 106, 84);
-	--color2: rgb(79, 48, 66);
-	--color3: rgb(95, 119, 143);
-	--color4: rgb(148, 175, 203);
-	--color5: rgb(234, 234, 224);
+	--color1: rgb(81, 55, 33);
+	--color2: rgb(92, 171, 60);
+	--color3: rgb(146, 107, 71);
+	--color4: rgb(230, 244, 125);
+	--color5: rgb(244, 247, 204);
+
+	font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -25,14 +29,14 @@ body {
 
 #content {
 	width: 90vw;
-	max-width: 1200px;
+	max-width: 900px;
 	height: 100%;
 	display: grid;
 	grid-template-rows: 50px 1fr 30px;
 }
 
 header {
-	background-color: var(--color1);
+	background-color: var(--color3);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -41,16 +45,18 @@ header {
 main {
 	background-color: var(--color3);
 	display: grid;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto 3fr 3fr;
 	gap: 10px;
 	padding: 10px;
 }
 
 footer {
-	background-color: var(--color1);
+	background-color: var(--color3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: clamp(15px, 2vw, 20px);
+	color: var(--color5);
 }
 
 .section {
@@ -59,7 +65,32 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: var(--color4);
+	background-color: var(--color5);
 	border-radius: 20px;
-	padding: 5vmin;
+	padding: 3vh 5vw 3vh 5vw;
+}
+
+a, a:visited {
+	font-size: clamp(20px, 3vw, 35px);
+	color: var(--color5);
+}
+
+a:hover {
+	color: var(--color4);
+}
+
+h1 {
+	font-size: clamp(30px, 5vw, 60px);
+	color: var(--color2);
+}
+
+h3 {
+	font-size: clamp(20px, 3vw, 35px);
+	color: var(--color3);
+	padding-bottom: 2vh;
+}
+
+p {
+	font-size: clamp(17px, 2.5vw, 25px);
+	color: var(--color1);
 }

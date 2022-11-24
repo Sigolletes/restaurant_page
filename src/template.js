@@ -10,6 +10,10 @@ function displayTemplate() {
 	const menuTag = document.createElement("div");
 	const contactTag = document.createElement("div");
 
+	homeTag.setAttribute("id", "homeTag");
+	menuTag.setAttribute("id", "menuTag");
+	contactTag.setAttribute("id", "contactTag");
+
 	homeTag.innerHTML = "<a href='./home.js'>HOME</a>";
 	menuTag.innerHTML = "<a href='./menu.js'>MENU</a>";
 	contactTag.innerHTML = "<a href='./contact.js'>CONTACT</a>";

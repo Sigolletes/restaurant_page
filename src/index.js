@@ -1,23 +1,20 @@
-// imports
 import home from './home';
 import menu from './menu';
 import contact from './contact';
 import template from './template';
 
-// event listener page loaded tab home
+function navigation() {
+	const homeTag = document.querySelector("#homeTag");
+  const menuTag = document.querySelector("#menuTag");
+  const contactTag = document.querySelector("#contactTag");
+
+  homeTag.addEventListener("click", home);
+  menuTag.addEventListener("click", menu);
+  contactTag.addEventListener("click", contact);
+}
+
 addEventListener("load", () => {
   template();
+	navigation();
   home();
-});
-
-// event listener tab menu
-addEventListener("click", () => {
-  template();
-  menu();
-});
-
-// event listener tab contact
-addEventListener("click", () => {
-  template();
-  contact();
 });
