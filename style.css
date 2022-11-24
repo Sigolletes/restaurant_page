@@ -121,6 +121,13 @@ a:hover {
 	color: var(--color2);
 }
 
+.active, .active:hover {
+	background-color: var(--color5);
+	color: var(--color2);
+	transform: scale(1.1);
+	cursor: default;
+}
+
 ::-webkit-scrollbar {
 	width: 20px;
 	height: 20px;
